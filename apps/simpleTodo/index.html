@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO App</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />    
+  </head>
+  <body>
+    <div class="container center">
+      <h1 class="center title">My TODO App</h1>
+      <div class="flow-right controls">
+        <span>Item count: <span id="item-count">0</span></span>
+        <span>Unchecked count: <span id="unchecked-count">0</span></span>
+      </div>
+      <button class="button center" onClick="newTodo()">New TODO</button>
+      <br> 
+      <div id="new-task" class="center new-task">
+        <label for="task-name">Task name: </label>
+        <input type="text" id="task-name">
+        <label for="due-date">Due date: </label>
+        <input type="date" id="due-date">
+        <button class="button center" onClick="addNewTask()">Add</button>
+        <button class="button center" onClick="hideAddingTask()">Cancel</button>
+      </div>
+      <ul id="todo-list" class="todo-list center"></ul>
+    </div>    
+    <script src="./script.js"></script>
+  </body>
+</html>
