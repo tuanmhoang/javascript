@@ -3,7 +3,7 @@ function getEventTarget(e) {
     return e.target || e.srcElement; 
 }
 
-var ul = document.getElementById('my-list');
+let ul = document.getElementById('my-list');
 ul.onclick = function(event) {
     let target = getEventTarget(event);
     let li = target.closest('li'); // get reference
